@@ -76,6 +76,9 @@ export default function SettlementHighlights() {
           >
             View All Case Results <ArrowRight className="w-4 h-4" />
           </Link>
+          <p className="text-[10px] text-gray-400 mt-4 max-w-xl mx-auto">
+            Past results do not guarantee, warrant, or predict future case outcomes. Each case is different and must be judged on its own merits. Settlement amounts shown are gross amounts before fees and costs.
+          </p>
         </motion.div>
       </div>
     </section>

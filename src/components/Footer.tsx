@@ -108,16 +108,31 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* SB37 Compliance Disclaimer */}
+      <div className="border-t border-white/10 bg-navy-dark/50">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <p className="text-gray-500 text-[11px] leading-relaxed mb-3">
+            <strong className="text-gray-400">IMPORTANT DISCLAIMER:</strong> The information on this website is for general informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Past results do not guarantee, warrant, or predict future case outcomes. Each case is unique and must be evaluated on its own merits. The amounts listed on this website represent gross settlement or verdict amounts and do not reflect attorneys&apos; fees, costs, or case expenses. Results depend on unique case facts and legal issues.
+          </p>
+          <p className="text-gray-500 text-[11px] leading-relaxed mb-3">
+            <strong className="text-gray-400">ADVERTISING DISCLOSURE (CA SB37):</strong> This website constitutes attorney advertising. {FIRM.name} is responsible for the content of this advertisement. Principal office: {FIRM.fullAddress}. Awards and recognitions referenced on this site, including &quot;Best Law Firms&quot; by U.S. News &amp; World Report/Best Lawyers®, are not conferred by virtue of membership in any organization, nor does the awarding organization charge or solicit a fee for such recognition. No representation is made that the quality of legal services to be performed is greater than the quality of legal services performed by other lawyers. Certifications, specializations, and awards are not intended to imply superiority over other attorneys.
+          </p>
+          <p className="text-gray-500 text-[11px] leading-relaxed">
+            Licensed to practice in California. Free consultation available 24/7. Hablamos Español.
+          </p>
+        </div>
+      </div>
+
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-gray-500 text-xs">
-            © {new Date().getFullYear()} {FIRM.name}. All rights reserved. The information on this website is for general information purposes only.
+            © {new Date().getFullYear()} {FIRM.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-gray-500 text-xs">
+            <Link href="/disclaimer" className="hover:text-gray-300 transition-colors">Disclaimer</Link>
             <span>Privacy Policy</span>
             <span>Terms of Service</span>
-            <span>Disclaimer</span>
           </div>
         </div>
       </div>

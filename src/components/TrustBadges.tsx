@@ -39,6 +39,9 @@ export default function TrustBadges() {
             </motion.div>
           ))}
         </motion.div>
+        <p className="text-center text-[10px] text-gray-400 mt-6">
+          Awards and recognitions are not conferred by virtue of membership. Awarding organizations do not charge or solicit fees for recognition. Not an endorsement of legal ability.
+        </p>
       </div>
     </section>
   );
